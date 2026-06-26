@@ -44,3 +44,69 @@ tabList.addEventListener('keydown', (e) => {
     tabArray[nextIdx].focus();
     activateTab(tabArray[nextIdx]);
 });
+
+const revealElements = document.querySelectorAll('[data-reveal]');
+if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    revealElements.forEach(el => observer.observe(el));
+}
+
+const lightbox = document.querySelector('.lightbox');
+const lightboxImg = lightbox.querySelector('.lightbox-image');
+const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+const galleryItems = document.querySelectorAll('[data-lightbox]');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const figcaption = item.querySelector('figcaption');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = figcaption ? figcaption.textContent : '';
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+
+lightboxClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeLightbox();
+});
+
+lightbox.addEventListener('click', closeLightbox);
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+        closeLightbox();
+    }
+});
+
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+}, { passive: true });
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

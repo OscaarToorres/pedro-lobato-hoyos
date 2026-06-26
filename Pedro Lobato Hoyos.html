@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <header>
         <h1>Pedro Lobato Hoyos</h1>
         <p class="header-subtitle">Pintor paisajista de Ubrique</p>
@@ -27,8 +30,8 @@
         </nav>
     </header>
 
-    <main>
-        <section class="tab-content active" role="tabpanel" id="about" aria-labelledby="tab-about">
+    <main id="main-content">
+        <section class="tab-content active" role="tabpanel" id="about" aria-labelledby="tab-about" aria-live="polite">
             <h2>Acerca de</h2>
 
             <article class="bio">
@@ -39,8 +42,8 @@
                     <p>Nació en <strong>Ubrique, Cádiz</strong> el <strong>16 de octubre de 1960</strong>. Desde muy joven mostraba un gran interés por el dibujo, sobre todo le gustaba representar animales de la naturaleza de la sierra —zorros, águilas, lobos— mostrando una gran habilidad innata. <em>Siendo un artista autodidacta</em>, recibió enseñanza en su temprana juventud de la mano de <strong>Francisco Peña Corrales</strong>, quien le transmitió la técnica de la espátula tal como la practicaba Pierre de Matheu, pintor salvadoreño de raíces gaditanas y formación francesa.</p>
                 </section>
 
-                <figure class="article-image-figure">
-                    <img class="article-image" src="imagen/Espatula.jpg" alt="Pedro Lobato Hoyos pintando al aire libre con la técnica de la espátula" loading="lazy">
+                <figure class="article-image-figure" data-reveal>
+                    <img class="article-image" src="imagen/Espatula.jpg" alt="Pedro Lobato Hoyos pintando al aire libre con la técnica de la espátula" loading="lazy" decoding="async">
                     <figcaption>Pedro Lobato Hoyos con una de sus obras a espátula.</figcaption>
                 </figure>
 
@@ -49,24 +52,63 @@
                     <p>Era amante del paisaje, por lo que sus obras reflejaban una profunda conexión con la naturaleza. Realizaba sus pinturas al aire libre: cogía su coche, montaba el caballete junto al lienzo y los pinceles, y se dirigía a los alrededores de Ubrique. Previamente visitaba cada lugar para estudiar las horas de luz y el encuadre, buscando capturar la esencia de cada momento, destacando especialmente las lejanías.</p>
                 </section>
 
-                <blockquote class="pull-quote">
+                <blockquote class="pull-quote" data-reveal>
                     <p>«Siempre en búsqueda de una constante evolución en su pintura, fue uno de los primeros pintores que contribuyó a proyectar la pintura ubriqueña más allá de las fronteras locales.»</p>
                 </blockquote>
 
                 <section class="bio-section">
                     <h3><span class="section-icon" aria-hidden="true">✦</span> Trayectoria</h3>
-                    <p>En <span class="date-highlight">1980</span> realizó su primera exposición en Ubrique. A partir de ahí, las exposiciones se sucedieron a un ritmo constante —a veces varias al año— en ciudades como <strong>Ronda, Jerez, Sevilla, Cádiz, Chiclana, San Fernando, Marbella, Almería, Jaén, Valencia, Zaragoza</strong>, entre otras.</p>
-                    <p>A mediados de los <span class="date-highlight">90</span> comenzaron a surgir los primeros certámenes de pintura rápida, en los que empezó a participar cosechando los primeros premios de pintura al aire libre. Esto le llevó a tomar una decisión clave: cambiar el <strong>óleo por el acrílico</strong>, ya que el óleo requería más tiempo de secado. Con ello, también evolucionó su técnica, pasando de la espátula al pincel.</p>
+                    <p>En <strong>1980</strong> realizó su primera exposición en Ubrique. A partir de ahí, las exposiciones se sucedieron a un ritmo constante —a veces varias al año— en ciudades como <strong>Ronda, Jerez, Sevilla, Cádiz, Chiclana, San Fernando, Marbella, Almería, Jaén, Valencia, Zaragoza</strong>, entre otras.</p>
+                    <p>A mediados de los <strong>90</strong> comenzaron a surgir los primeros certámenes de pintura rápida, en los que empezó a participar cosechando los primeros premios de pintura al aire libre. Esto le llevó a tomar una decisión clave: cambiar el <strong>óleo por el acrílico</strong>, ya que el óleo requería más tiempo de secado. Con ello, también evolucionó su técnica, pasando de la espátula al pincel.</p>
                 </section>
+
+                <div class="section-divider" aria-hidden="true"></div>
+
+                <section class="bio-section">
+                    <h3><span class="section-icon" aria-hidden="true">✦</span> Obras destacadas</h3>
+                    <div class="mini-gallery">
+                        <figure class="gallery-item" data-lightbox>
+                            <img src="imagen/lejania-1.jpg" alt="Paisaje de lejanías de Ubrique" loading="lazy" decoding="async">
+                            <figcaption>Lejanías</figcaption>
+                        </figure>
+                        <figure class="gallery-item" data-lightbox>
+                            <img src="imagen/sanAntonio-1.jpg" alt="San Antonio — Pintura paisajista" loading="lazy" decoding="async">
+                            <figcaption>San Antonio</figcaption>
+                        </figure>
+                        <figure class="gallery-item" data-lightbox>
+                            <img src="imagen/lobatohoyos-pintando.jpg" alt="Pedro Lobato Hoyos pintando al aire libre" loading="lazy" decoding="async">
+                            <figcaption>El artista en plena faena</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-year">1960</span>
+                        <span class="timeline-label">Nacimiento en Ubrique</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">1980</span>
+                        <span class="timeline-label">Primera exposición</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">1990</span>
+                        <span class="timeline-label">Certámenes de pintura rápida</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">12+</span>
+                        <span class="timeline-label">Ciudades donde expuso</span>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section class="tab-content" role="tabpanel" id="gallery" aria-labelledby="tab-gallery">
+        <section class="tab-content" role="tabpanel" id="gallery" aria-labelledby="tab-gallery" aria-live="polite">
             <h2>Galería</h2>
             <p class="placeholder-text">Próximamente — las obras de Pedro Lobato Hoyos.</p>
         </section>
 
-        <section class="tab-content" role="tabpanel" id="contact" aria-labelledby="tab-contact">
+        <section class="tab-content" role="tabpanel" id="contact" aria-labelledby="tab-contact" aria-live="polite">
             <h2>Contacto</h2>
             <p class="placeholder-text">Próximamente — información de contacto.</p>
         </section>
@@ -74,8 +116,18 @@
 
     <footer>
         <div class="footer-divider"></div>
-        <img class="footer-signature" src="imagen/firma-lobatohoyos.jpg" alt="Firma de Pedro Lobato Hoyos" loading="lazy">
+        <img class="footer-signature" src="imagen/firma-lobatohoyos.jpg" alt="Firma de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+        <p class="footer-copy">&copy; Pedro Lobato Hoyos</p>
+        <p class="footer-location">Ubrique, Cádiz</p>
     </footer>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visualización de imagen">
+        <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+        <img class="lightbox-image" src="" alt="">
+        <p class="lightbox-caption"></p>
+    </div>
+
+    <button class="back-to-top" aria-label="Volver arriba">&#8593;</button>
 
     <script src="js/script.js"></script>
 </body>
