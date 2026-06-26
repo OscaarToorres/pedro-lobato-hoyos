@@ -9,6 +9,7 @@
     <meta property="og:description" content="Artista autodidacta de Ubrique, Cádiz. Trayectoria desde 1980. Conoce la vida y obra de este pintor paisajista.">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" as="image" href="imagen/lejania-1.jpg" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -16,12 +17,12 @@
 </head>
 <body>
 
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <a href="#page-nav" class="skip-link">Saltar a la navegación</a>
 
     <header>
         <h1>Pedro Lobato Hoyos</h1>
         <p class="header-subtitle">Pintor paisajista de Ubrique</p>
-        <nav aria-label="Secciones de la página">
+        <nav id="page-nav" tabindex="-1" aria-label="Secciones de la página">
             <div class="tabs-buttons" role="tablist">
                 <button class="tab-button active" role="tab" aria-selected="true" aria-controls="about" id="tab-about" data-tab="about">Acerca de</button>
                 <button class="tab-button" role="tab" aria-selected="false" aria-controls="gallery" id="tab-gallery" data-tab="gallery">Galería</button>
@@ -84,18 +85,22 @@
 
                 <div class="timeline">
                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
                         <span class="timeline-year">1960</span>
                         <span class="timeline-label">Nacimiento en Ubrique</span>
                     </div>
                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
                         <span class="timeline-year">1980</span>
                         <span class="timeline-label">Primera exposición</span>
                     </div>
                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
                         <span class="timeline-year">1990</span>
                         <span class="timeline-label">Certámenes de pintura rápida</span>
                     </div>
                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
                         <span class="timeline-year">12+</span>
                         <span class="timeline-label">Ciudades donde expuso</span>
                     </div>
@@ -105,7 +110,862 @@
 
         <section class="tab-content" role="tabpanel" id="gallery" aria-labelledby="tab-gallery" aria-live="polite">
             <h2>Galería</h2>
-            <p class="placeholder-text">Próximamente — las obras de Pedro Lobato Hoyos.</p>
+
+            <div class="gallery-grid">
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_001.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_002.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_003.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_004.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_005.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_006.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_007.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_008.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_009.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_010.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_011.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_012.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_013.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_014.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_015.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_016.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_017.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_018.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_019.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_020.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_021.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_022.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_023.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_024.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_025.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_026.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_027.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_028.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_029.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_030.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_031.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_032.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_033.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_034.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_035.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_036.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_037.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_038.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_039.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_040.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_041.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_042.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_043.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_044.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_045.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_046.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_047.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_048.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_049.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_050.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_051.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_052.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_053.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_054.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_055.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_056.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_057.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_058.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_059.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_060.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_061.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_062.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_063.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_064.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_065.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_066.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_067.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_068.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_069.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_070.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_071.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_072.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_073.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_074.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_075.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_076.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_077.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_078.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_079.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_081.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_082.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_083.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_084.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_085.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_086.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_087.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_088.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_089.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_090.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_091.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_092.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_093.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_094.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_095.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_096.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_097.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_098.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_099.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_100.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_101.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_102.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_103.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_104.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_105.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_106.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_107.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_108.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_109.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_110.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_111.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_112.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_113.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_114.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_115.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_116.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_117.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_118.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_119.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_120.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_121.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_122.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+
+                <figure class="gallery-card" data-lightbox>
+                    <img src="imagen/gallery/lobatohoyos_123.jpg" alt="Obra de Pedro Lobato Hoyos" loading="lazy" decoding="async">
+                    <div class="gallery-card-hover">
+                        <span class="gallery-card-zoom">Ampliar</span>
+                    </div>
+                </figure>
+            </div>
         </section>
 
         <section class="tab-content" role="tabpanel" id="contact" aria-labelledby="tab-contact" aria-live="polite">

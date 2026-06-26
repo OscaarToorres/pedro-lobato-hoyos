@@ -13,3 +13,5 @@
 
 /imagen/*
 !/imagen/*.jpg
+!/imagen/gallery/
+!/imagen/gallery/*.jpg

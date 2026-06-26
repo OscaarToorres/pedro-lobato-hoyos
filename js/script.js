@@ -17,6 +17,21 @@ function activateTab(button) {
     if (tabElement) {
         tabElement.classList.add('active');
     }
+
+    if (tabName === 'gallery') {
+        animateGalleryCards();
+    }
+}
+
+function animateGalleryCards() {
+    const cards = document.querySelectorAll('#gallery .gallery-card');
+    if (!cards.length) return;
+    cards.forEach((card, i) => {
+        card.style.animationDelay = `${i * 0.07}s`;
+        card.classList.remove('visible');
+    });
+    void cards[0].offsetWidth;
+    cards.forEach(card => card.classList.add('visible'));
 }
 
 tabButtons.forEach(button => {
