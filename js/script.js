@@ -13,9 +13,6 @@ const GALLERY_IMAGES = [];
     grid.innerHTML = GALLERY_IMAGES.map((img, i) =>
         `<figure class="gallery-card" data-lightbox data-index="${i}" tabindex="0" role="button" aria-label="Obra ${i + 1} de ${GALLERY_IMAGES.length} de Pedro Lobato Hoyos">
             <img src="${img.thumb}" data-full="${img.src}" alt="Obra ${i + 1} de ${GALLERY_IMAGES.length}" loading="lazy" decoding="async" width="300" height="225">
-            <div class="gallery-card-hover">
-                <span class="gallery-card-zoom">Ampliar</span>
-            </div>
         </figure>`
     ).join('');
 })();
