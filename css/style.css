@@ -183,6 +183,7 @@ nav {
 
 main {
     position: relative;
+    overflow: hidden;
     background-color: var(--color-surface);
     padding: 44px;
     border-radius: 8px;
