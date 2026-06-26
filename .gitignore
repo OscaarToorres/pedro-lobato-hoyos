@@ -15,3 +15,5 @@
 !/imagen/*.jpg
 !/imagen/gallery/
 !/imagen/gallery/*.jpg
+!/imagen/gallery/thumbs/
+!/imagen/gallery/thumbs/*.jpg
