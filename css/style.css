@@ -598,12 +598,78 @@ main {
     line-height: 1.7;
 }
 
-.placeholder-text {
+.contact-card {
+    max-width: 480px;
+    margin: 10px auto 0;
+    text-align: center;
+    padding: 36px 28px;
+    background: var(--color-bg);
+    border-radius: 8px;
+    border: 1px solid rgba(196, 154, 60, 0.15);
+}
+
+.contact-name {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.contact-role {
+    font-size: 0.85rem;
     color: var(--color-text-muted);
     font-style: italic;
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 60px 0;
+    margin-bottom: 0;
+}
+
+.contact-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--color-primary-light);
+    margin: 18px auto;
+    opacity: 0.4;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.contact-label {
+    font-size: 1.2rem;
+    color: var(--color-primary-light);
+    line-height: 1;
+}
+
+.contact-link {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.contact-link:hover {
+    color: var(--color-primary-light);
+    border-bottom-color: var(--color-primary-light);
+}
+
+.contact-link:focus-visible {
+    outline: 2px solid var(--color-primary-light);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.contact-location {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin: 0;
 }
 
 footer {
