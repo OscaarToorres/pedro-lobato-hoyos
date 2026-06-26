@@ -128,28 +128,39 @@ body {
     padding-bottom: 40px;
 }
 
+#slide-presentacion .slide-content::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: rgba(218, 190, 140, 0.3);
+    margin: 16px auto;
+}
+
+.slide-subtitle {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: rgba(218, 190, 140, 0.9);
+    font-style: italic;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.slide-intro {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+    color: rgba(218, 190, 140, 0.5);
+    font-weight: 400;
+}
+
 .slide-title {
     font-family: var(--font-display);
     font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 700;
     color: white;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     text-shadow: 0 1px 20px rgba(0,0,0,0.15);
-}
-
-.slide-subtitle {
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    color: rgba(255, 255, 255, 0.8);
-    font-style: italic;
-    margin-bottom: 6px;
-}
-
-.slide-intro {
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-size: clamp(0.75rem, 1.2vw, 0.85rem);
-    color: rgba(255, 255, 255, 0.5);
 }
 
 /* Scroll indicator */
